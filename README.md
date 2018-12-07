@@ -1,7 +1,8 @@
 # Homework2
 Based on the "divide and conquer" method, QuickSort and MergeSort are 2 sorting techniques in which the set of elements is "splitted" into smaller lists, and then recombined and analyzed after rearrangement. The quick sort usually requires more comparisons than merge sort for sorting a large set of elements.
 
-Using Quick sort, the set of the elements is divided into parts repeatedly until it is not possible to divide it further. Also known as "partition exchange sort", it uses a key element (known as the pivot) to "isolate" the elements.
+Using Quick sort, the set of the elements is divided into parts repeatedly until it is not possible to divide it further. Also known as "partition exchange sort", it uses a key element (known as the pivot) to "isolate" the elements. In the end, the program return 1 single Array, result of the sorting of the new sub-arrays.
+For every n rtition, we make 1 comparison, so the total numer of comparison is n log n
 Unlike MergeSort, the splitting of a list of elements is not necessarily divided into halfs every time, and for this reason QuickSort is faster
 But it is also inefficient in some situations and also performs a lot of comparisons as compared to merge sort.
 

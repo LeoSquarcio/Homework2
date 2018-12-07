@@ -17,3 +17,4 @@ The number of comparisons during the first loop is n-1, during the second loop i
 Unlike MergeSort, the splitting of a list of elements is not necessarily divided into halfs every time, except in the rare case in which the pivot is also the median of the list of elements.
 At the same time, the created sub-arrays don't require extra space in the code, and for this reason QuickSort is faster.
 But it is also inefficient in some situations and also performs a lot of comparisons as compared to merge sort.
+ 

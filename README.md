@@ -18,3 +18,11 @@ Unlike MergeSort, the splitting of a list of elements is not necessarily divided
 At the same time, the created sub-arrays don't require extra space in the code, and for this reason QuickSort is faster.
 But it is also inefficient in some situations and also performs a lot of comparisons as compared to merge sort.
  
+ 
+ 
+timeit is used to measure the amount of time that the program takes to run a program, and we use it to compare the speed of QuickSort and MergeSort.
+When the code are analyzed, Python notes the start time just before the analysis is run, then calculates and prints the time taken to run the analysis at the end.
+defines a single public class, Timer. The constructor for Timer takes a statement to be timed, and a setup statement (to initialize variables, for example). The Python statements should be strings and can include embedded newlines.
+
+The timeit() method runs the setup statement one time, then executes the primary statement repeatedly and returns the amount of time which passes. The argument to timeit() controls how many times to run the statement; the default is 1,000.
+

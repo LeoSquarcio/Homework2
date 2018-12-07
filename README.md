@@ -12,12 +12,11 @@ The merge sort algorithm performs in the exact same and precise manner regardles
 
 QuickSort is the faster of the 2 sorting programs.
 Using Quick sort, the set of the elements is infact divided into parts repeatedly until it is not possible to divide it further. Also known as "partition exchange sort", it uses a key element (known as the pivot) to "isolate" the elements.
-One partition contains those elements that are smaller than the key element. Another partition contains those elements that are greater than the key element. The elements are sorted recursively.
+One partition contains those elements that are smaller than the pivot. Another partition contains those elements that are greater than the pivot. The elements are sorted recursively.
 The number of comparisons during the first loop is n-1, during the second loop is n-2... so at the end of the code (n-1)+(n-2)+(n-3)+ . . . +3+2+1 comparisons are required.
 Unlike MergeSort, the splitting of a list of elements is not necessarily divided into halfs every time, except in the rare case in which the pivot is also the median of the list of elements.
 At the same time, the created sub-arrays don't require extra space in the code, and for this reason QuickSort is faster.
 But it is also inefficient in some situations and also performs a lot of comparisons as compared to merge sort.
- 
  
  
 timeit is used to measure the amount of time that the program takes to run a program, and we use it to compare the speed of QuickSort and MergeSort.

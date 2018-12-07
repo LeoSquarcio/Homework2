@@ -2,7 +2,7 @@
 Based on the "divide and conquer" method, QuickSort and MergeSort are 2 sorting techniques in which the set of elements is "splitted" into smaller lists, and then recombined and analyzed after rearrangement. The quick sort usually requires more comparisons than merge sort for sorting a large set of elements.
 
 
-In MergeSort, the elements are split into sub-arrays (n/2) again and again until only one element is left in any of the creatd sub-arrays. An array with just 1 element is ALWAYS sorted. This is a feature which significantly decreases the sorting time, but it requires additional storage for storing the auxiliary array.
+In MergeSort, the elements are split into smaller groups also called sub-arrays, again and again until only one element is left in any of the created sub-arrays. An array with just 1 element is ALWAYS sorted. This is a feature which significantly decreases the sorting time, but it requires additional storage for storing the auxiliary arrays.
   At last, the subarrays are merged to make it n element size of the array. The list always divided into just half (n/2) dissimilar to quick sort: this means that you will have 2 lists during the 1° loop, 4 lists in the 2° loop, and so on. For every n partition, we make 1 comparison, so the total numer of comparison is n log n.
  In the end, the program return 1 single Array, result of the sorting of the new sub-arrays.
 
@@ -23,5 +23,4 @@ timeit is used to measure the amount of time that the program takes to run a pro
 When the code are analyzed, Python notes the start time just before the analysis is run, then calculates and prints the time taken to run the analysis at the end.
 defines a single public class, Timer. The constructor for Timer takes a statement to be timed, and a setup statement (to initialize variables, for example). The Python statements should be strings and can include embedded newlines.
 
-The timeit() method runs the setup statement one time, then executes the primary statement repeatedly and returns the amount of time which passes. The argument to timeit() controls how many times to run the statement; the default is 1,000.
 
